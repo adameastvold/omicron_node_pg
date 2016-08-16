@@ -3,6 +3,7 @@ $(document).ready(function() {
 
     // add a book
     $('#book-submit').on('click', postBook);
+
 });
 /**
  * Retrieve books from server and append to DOM
@@ -55,4 +56,5 @@ function postBook() {
             console.log('POST /books does not work...');
         },
     });
+
 }
