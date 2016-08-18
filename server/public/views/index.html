@@ -39,13 +39,26 @@
           <label for="publisher">Publisher:</label>
           <input type="text" id="edition" name="publisher"  class="form-control"/>
         </div>
-        
+
+        <div class="form-group">
+          <label for="genre">Genre:</label>
+          <input type="text" id="genre" name="genre"  class="form-control"/>
+        </div>
+
         <button id="book-submit" class="btn btn-default">Go</button>
       </form>
 
       <h2>Books</h2>
+      <div id="genre-select-box">
+      <select id="selectedGenre" class="btn btn-default">
+        <option value="History">History</option>
+        <option value="Philosophy">Philosophy</option>
+        <option value="Sci-fi">Sci-Fi</option>
+        <option value="Comedy">Comedy</option>
+      </select>
+      <button class="genre-submit" class="btn btn-default">Submit</button>
+    </div>
       <ul id="book-list">
-
       </ul>
     </main>
 
